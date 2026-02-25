@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://jmadhavp.github.io/trustcalc/index.html</loc>
+    <loc>https://jmadhavp.github.io/trustcalc/</loc>
     <lastmod>2026-02-26</lastmod>
     <priority>1.0</priority>
   </url>
@@ -46,7 +46,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jmadhavp.github.io/trustcalc/guides/smart-debt-management-strategy.html</loc>
+    <loc>https://jmadhavp.github.io/trustcalc/guides/guide-debt-management.html</loc>
     <lastmod>2026-02-26</lastmod>
     <priority>0.8</priority>
   </url>
