@@ -3,8 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mortgage Calculator USA & UK | Monthly Payment & Amortization</title>
-    <meta name="description" content="Calculate your monthly mortgage payments for US and UK properties. Includes property tax, insurance, and full amortization schedule.">
+    <title>Mortgage Calculator USA & UK – Monthly Payment & Amortization | TrustCalc</title>
+    <meta name="description" content="Free mortgage calculator for USA and UK. Estimate monthly payments, interest, property tax and full amortization schedule with clear examples.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jmadhavp.github.io/trustcalc/calculators/mortgage.html">
+    <meta property="og:title" content="Mortgage Calculator USA & UK – TrustCalc">
+    <meta property="og:description" content="Estimate your monthly mortgage payments and full amortization schedule for USA and UK.">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="https://jmadhavp.github.io/trustcalc/calculators/mortgage.html">
+    <meta name="twitter:title" content="Mortgage Calculator USA & UK – TrustCalc">
+    <meta name="twitter:description" content="Free mortgage calculator for USA and UK. Estimate monthly payments and amortization.">
+    
+    <link rel="canonical" href="https://jmadhavp.github.io/trustcalc/calculators/mortgage.html">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +28,48 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/calculator.css">
+
+    <!-- JSON-LD FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a good down payment for a mortgage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "While 20% is often recommended to avoid Private Mortgage Insurance (PMI) in the US, many buyers put down as little as 3-5% depending on the loan type. In the UK, a larger deposit (e.g., 10-15%) typically unlocks lower interest rate tiers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does interest rate affect my mortgage payment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Even a 1% difference in interest rates can save or cost you tens of thousands of dollars over the life of a 30-year loan. For example, on a $300,000 loan, 1% extra in interest adds about $200 per month to your payment."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the 28/36 rule for mortgage affordability?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The 28/36 rule suggests that your monthly housing costs should not exceed 28% of your gross monthly income, and your total debt payments should not exceed 36%. This is a common benchmark used by US lenders."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I get a mortgage with bad credit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, but it will likely come with a higher interest rate and a larger down payment requirement. In the US, FHA loans are designed for borrowers with lower credit scores. In the UK, specialist lenders offer 'adverse credit' mortgages."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <header>
@@ -31,7 +87,7 @@
 
     <main class="container">
         <section style="margin-top: 3rem;">
-            <h1>Mortgage Calculator</h1>
+            <h1>Mortgage Calculator (USA & UK)</h1>
             <p style="color: var(--text-light);">Estimate your monthly payments and see a full breakdown of your mortgage costs.</p>
         </section>
 
@@ -123,12 +179,42 @@
                 <h3>Frequently Asked Questions</h3>
                 <div class="faq-item">
                     <div class="faq-question">What is a good down payment? <span>+</span></div>
-                    <div class="faq-answer">While 20% is often recommended to avoid Private Mortgage Insurance (PMI) in the US, many buyers put down as little as 3-5% depending on the loan type.</div>
+                    <div class="faq-answer">While 20% is often recommended to avoid Private Mortgage Insurance (PMI) in the US, many buyers put down as little as 3-5% depending on the loan type. In the UK, a larger deposit (e.g., 10-15%) typically unlocks lower interest rate tiers.</div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">How does interest rate affect my payment? <span>+</span></div>
-                    <div class="faq-answer">Even a 1% difference in interest rates can save or cost you tens of thousands of dollars over the life of a 30-year loan.</div>
+                    <div class="faq-answer">Even a 1% difference in interest rates can save or cost you tens of thousands of dollars over the life of a 30-year loan. For example, on a $300,000 loan, 1% extra in interest adds about $200 per month to your payment.</div>
                 </div>
+                <div class="faq-item">
+                    <div class="faq-question">What is the 28/36 rule for mortgage affordability? <span>+</span></div>
+                    <div class="faq-answer">The 28/36 rule suggests that your monthly housing costs should not exceed 28% of your gross monthly income, and your total debt payments should not exceed 36%. This is a common benchmark used by US lenders.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Can I get a mortgage with bad credit? <span>+</span></div>
+                    <div class="faq-answer">Yes, but it will likely come with a higher interest rate and a larger down payment requirement. In the US, FHA loans are designed for borrowers with lower credit scores. In the UK, specialist lenders offer "adverse credit" mortgages.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Tools & Guides -->
+        <section class="related-tools">
+            <h3>Related Tools & Guides</h3>
+            <div class="related-grid">
+                <a href="rent-vs-buy.html" class="related-card">
+                    <h4>Rent vs Buy Calculator</h4>
+                    <p>Compare the long-term financial impact of renting versus buying a home.</p>
+                    <span class="learn-more">Try Tool →</span>
+                </a>
+                <a href="dti.html" class="related-card">
+                    <h4>DTI Calculator</h4>
+                    <p>Check your Debt-to-Income ratio to see if you qualify for a mortgage.</p>
+                    <span class="learn-more">Try Tool →</span>
+                </a>
+                <a href="../guides/how-much-mortgage-can-i-afford.html" class="related-card">
+                    <h4>Mortgage Affordability Guide</h4>
+                    <p>Learn how lenders calculate your maximum loan amount and what to watch for.</p>
+                    <span class="learn-more">Read Guide →</span>
+                </a>
             </div>
         </section>
 

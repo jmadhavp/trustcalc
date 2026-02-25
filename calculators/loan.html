@@ -3,8 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loan Repayment Calculator | Personal, Auto & Business Loans</title>
-    <meta name="description" content="Calculate monthly loan repayments, total interest, and simulate early payoffs for personal, auto, and business loans.">
+    <title>Loan Repayment Calculator – Personal, Auto & Business | TrustCalc</title>
+    <meta name="description" content="Calculate monthly loan repayments, total interest, and simulate early payoffs for personal, auto, and business loans in USA and UK.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jmadhavp.github.io/trustcalc/calculators/loan.html">
+    <meta property="og:title" content="Loan Repayment Calculator – TrustCalc">
+    <meta property="og:description" content="Calculate monthly loan repayments and total interest for personal and auto loans.">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="https://jmadhavp.github.io/trustcalc/calculators/loan.html">
+    <meta name="twitter:title" content="Loan Repayment Calculator – TrustCalc">
+    <meta name="twitter:description" content="Calculate monthly loan repayments and simulate early payoffs.">
+    
+    <link rel="canonical" href="https://jmadhavp.github.io/trustcalc/calculators/loan.html">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +28,48 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/calculator.css">
+
+    <!-- JSON-LD FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is APR?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Annual Percentage Rate (APR) includes the interest rate plus any mandatory fees charged by the lender (like origination fees), giving you a more accurate view of the total cost of borrowing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is early loan repayment always better?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually yes, as it reduces the total interest paid. However, check if your lender has 'prepayment penalties' before making large extra payments. In the UK, early settlement fees are often capped at 1-2 months of interest."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does my credit score affect my loan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Your credit score is the primary factor in determining your APR. A higher score typically unlocks lower rates, which can save you thousands of dollars or pounds over the life of a loan."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between fixed and variable rates?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A fixed rate stays the same for the entire term, ensuring predictable monthly payments. A variable rate can change based on market conditions, meaning your payments could increase or decrease over time."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <header>
@@ -31,7 +87,7 @@
 
     <main class="container">
         <section style="margin-top: 3rem;">
-            <h1>Loan Repayment Calculator</h1>
+            <h1>Loan Repayment Calculator (USA & UK)</h1>
             <p style="color: var(--text-light);">Plan your personal, auto, or business loan and see how early payments can save you money.</p>
         </section>
 
@@ -105,15 +161,45 @@
             </div>
             
             <div class="faq-container">
-                <h3>Loan FAQ</h3>
+                <h3>Frequently Asked Questions</h3>
                 <div class="faq-item">
                     <div class="faq-question">What is APR? <span>+</span></div>
-                    <div class="faq-answer">Annual Percentage Rate (APR) includes the interest rate plus any fees charged by the lender, giving you a more accurate view of the total cost.</div>
+                    <div class="faq-answer">Annual Percentage Rate (APR) includes the interest rate plus any mandatory fees charged by the lender (like origination fees), giving you a more accurate view of the total cost of borrowing.</div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">Is early repayment always better? <span>+</span></div>
-                    <div class="faq-answer">Usually yes, as it reduces the total interest paid. However, check if your lender has "prepayment penalties" before making large extra payments.</div>
+                    <div class="faq-answer">Usually yes, as it reduces the total interest paid. However, check if your lender has "prepayment penalties" before making large extra payments. In the UK, early settlement fees are often capped at 1-2 months of interest.</div>
                 </div>
+                <div class="faq-item">
+                    <div class="faq-question">How does my credit score affect my loan? <span>+</span></div>
+                    <div class="faq-answer">Your credit score is the primary factor in determining your APR. A higher score typically unlocks lower rates, which can save you thousands of dollars or pounds over the life of a loan.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What is the difference between fixed and variable rates? <span>+</span></div>
+                    <div class="faq-answer">A fixed rate stays the same for the entire term, ensuring predictable monthly payments. A variable rate can change based on market conditions, meaning your payments could increase or decrease over time.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Tools & Guides -->
+        <section class="related-tools">
+            <h3>Related Tools & Guides</h3>
+            <div class="related-grid">
+                <a href="credit-card.html" class="related-card">
+                    <h4>Credit Card Interest</h4>
+                    <p>See how much your credit card debt is costing you and find the fastest payoff path.</p>
+                    <span class="learn-more">Try Tool →</span>
+                </a>
+                <a href="dti.html" class="related-card">
+                    <h4>DTI Calculator</h4>
+                    <p>Understand how your loan payments affect your overall debt-to-income ratio.</p>
+                    <span class="learn-more">Try Tool →</span>
+                </a>
+                <a href="../guides/personal-loan-repayment-guide.html" class="related-card">
+                    <h4>Loan Repayment Guide</h4>
+                    <p>Master strategies for paying off loans early and saving on interest costs.</p>
+                    <span class="learn-more">Read Guide →</span>
+                </a>
             </div>
         </section>
     </main>

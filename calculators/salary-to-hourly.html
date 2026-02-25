@@ -3,8 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salary to Hourly Calculator | Convert Annual to Hourly Rate</title>
+    <title>Salary to Hourly Calculator – Convert Annual to Hourly Rate | TrustCalc</title>
     <meta name="description" content="Convert your annual salary to an hourly rate, weekly, or monthly income. Perfect for budgeting and job offer comparisons in the USA and UK.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jmadhavp.github.io/trustcalc/calculators/salary-to-hourly.html">
+    <meta property="og:title" content="Salary to Hourly Calculator – TrustCalc">
+    <meta property="og:description" content="Convert your annual salary into hourly, daily, weekly, and monthly rates.">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="https://jmadhavp.github.io/trustcalc/calculators/salary-to-hourly.html">
+    <meta name="twitter:title" content="Salary to Hourly Calculator – TrustCalc">
+    <meta name="twitter:description" content="Understand your true earnings with our salary converter.">
+    
+    <link rel="canonical" href="https://jmadhavp.github.io/trustcalc/calculators/salary-to-hourly.html">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +28,48 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/calculator.css">
+
+    <!-- JSON-LD FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How is the hourly rate calculated from salary?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The most common method is dividing your annual salary by the total number of work hours in a year. For a standard 40-hour work week and 52 weeks a year, that is 2,080 hours."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is $50,000 a year hourly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "At a standard 40-hour work week (2,080 hours per year), a $50,000 salary equals approximately $24.04 per hour."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the salary to hourly conversion include taxes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. This calculator shows your 'gross' income before any deductions. Your actual 'take-home' pay will be lower after accounting for federal and state taxes (USA), National Insurance (UK), and any health insurance or retirement contributions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why should I know my hourly rate if I'm salaried?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Knowing your hourly rate helps you compare job offers more accurately, especially if one job requires more hours or 'unpaid' overtime. It also helps you value your time for personal budgeting and spending decisions."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <header>
@@ -31,7 +87,7 @@
 
     <main class="container">
         <section style="margin-top: 3rem;">
-            <h1>Salary to Hourly Calculator</h1>
+            <h1>Salary to Hourly Calculator (USA & UK)</h1>
             <p style="color: var(--text-light);">Convert your annual salary into hourly, daily, weekly, and monthly rates.</p>
         </section>
 
@@ -95,15 +151,45 @@
             </div>
             
             <div class="faq-container">
-                <h3>Salary FAQ</h3>
+                <h3>Frequently Asked Questions</h3>
                 <div class="faq-item">
                     <div class="faq-question">How is the hourly rate calculated? <span>+</span></div>
-                    <div class="faq-answer">The most common method is dividing the annual salary by the total number of work hours in a year (typically 2,080 hours for a 40-hour work week and 52 weeks).</div>
+                    <div class="faq-answer">The most common method is dividing your annual salary by the total number of work hours in a year. For a standard 40-hour work week and 52 weeks a year, that is 2,080 hours.</div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">Does this include taxes? <span>+</span></div>
-                    <div class="faq-answer">This calculator shows "gross" income (before taxes). Your "take-home" pay will be lower after federal, state/local taxes, and insurance deductions.</div>
+                    <div class="faq-question">What is $50,000 a year hourly? <span>+</span></div>
+                    <div class="faq-answer">At a standard 40-hour work week (2,080 hours per year), a $50,000 salary equals approximately $24.04 per hour.</div>
                 </div>
+                <div class="faq-item">
+                    <div class="faq-question">Does this include taxes and benefits? <span>+</span></div>
+                    <div class="faq-answer">No. This calculator shows your "gross" income before any deductions. Your actual "take-home" pay will be lower after accounting for federal and state taxes (USA), National Insurance (UK), and any health insurance or retirement contributions.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Why should I know my hourly rate if I'm salaried? <span>+</span></div>
+                    <div class="faq-answer">Knowing your hourly rate helps you compare job offers more accurately, especially if one job requires more hours or "unpaid" overtime. It also helps you value your time for personal budgeting and spending decisions.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Tools & Guides -->
+        <section class="related-tools">
+            <h3>Related Tools & Guides</h3>
+            <div class="related-grid">
+                <a href="inflation.html" class="related-card">
+                    <h4>Inflation Calculator</h4>
+                    <p>Understand how inflation impacts the purchasing power of your annual salary.</p>
+                    <span class="learn-more">Try Tool →</span>
+                </a>
+                <a href="loan.html" class="related-card">
+                    <h4>Loan Repayment</h4>
+                    <p>Calculate how much of your hourly earnings are required to service your debts.</p>
+                    <span class="learn-more">Try Tool →</span>
+                </a>
+                <a href="../guides/salary-to-hourly-conversion-explained.html" class="related-card">
+                    <h4>Salary Conversion Guide</h4>
+                    <p>Learn the math behind salary to hourly conversion and why it matters for job offers.</p>
+                    <span class="learn-more">Read Guide →</span>
+                </a>
             </div>
         </section>
     </main>

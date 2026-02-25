@@ -3,8 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Debt-to-Income (DTI) Calculator | Loan Approval Odds</title>
-    <meta name="description" content="Calculate your Debt-to-Income ratio (DTI) to see if you qualify for a mortgage or personal loan. Understand front-end and back-end ratios.">
+    <title>Debt-to-Income (DTI) Calculator – Loan Approval Odds | TrustCalc</title>
+    <meta name="description" content="Calculate your Debt-to-Income ratio (DTI) to see if you qualify for a mortgage or personal loan. Understand front-end and back-end ratios for USA and UK.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jmadhavp.github.io/trustcalc/calculators/dti.html">
+    <meta property="og:title" content="Debt-to-Income (DTI) Calculator – TrustCalc">
+    <meta property="og:description" content="Calculate your DTI ratio and understand your borrowing capacity.">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="https://jmadhavp.github.io/trustcalc/calculators/dti.html">
+    <meta name="twitter:title" content="Debt-to-Income (DTI) Calculator – TrustCalc">
+    <meta name="twitter:description" content="Check if you qualify for a mortgage or loan with our DTI tool.">
+    
+    <link rel="canonical" href="https://jmadhavp.github.io/trustcalc/calculators/dti.html">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +28,48 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/calculator.css">
+
+    <!-- JSON-LD FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a 'good' debt-to-income (DTI) ratio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Generally, a DTI of 36% or less is considered excellent. Most lenders require a DTI of 43% or lower to qualify for a conventional mortgage, although some programs allow up to 50% with a high credit score."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I calculate my DTI ratio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Add up all your monthly debt payments (rent/mortgage, car loans, student loans, credit card minimums) and divide that total by your gross monthly income (your pay before taxes). Multiply by 100 to get the percentage."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does DTI affect my credit score?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, your DTI ratio is not part of your credit score calculation. However, the amount of debt you owe (credit utilization) does affect your score, and lenders look at both your score and your DTI when making lending decisions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I lower my DTI ratio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can lower your DTI by either increasing your gross monthly income or decreasing your monthly debt payments. Paying off a small loan entirely or reducing credit card balances are the fastest ways to improve your ratio."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <header>
@@ -31,7 +87,7 @@
 
     <main class="container">
         <section style="margin-top: 3rem;">
-            <h1>Debt-to-Income (DTI) Calculator</h1>
+            <h1>Debt-to-Income (DTI) Calculator (USA & UK)</h1>
             <p style="color: var(--text-light);">Calculate your DTI ratio to understand your borrowing capacity for US and UK lenders.</p>
         </section>
 
@@ -93,6 +149,48 @@
             <div style="margin: 2rem 0; padding: 2rem; background: var(--bg-color); border-radius: 8px;">
                 <h3>Usage Example: Mortgage Qualification</h3>
                 <p>If your gross monthly income is <strong>$6,000</strong> and your total monthly debts (including your future mortgage) equal <strong>$2,160</strong>, your DTI is <strong>36%</strong>. This is often considered the "gold standard" for mortgage qualification. If your debt rises to <strong>$2,580</strong>, your DTI would be <strong>43%</strong>, which is the maximum limit for many conventional loans.</p>
+            </div>
+
+            <div class="faq-container">
+                <h3>Frequently Asked Questions</h3>
+                <div class="faq-item">
+                    <div class="faq-question">What is a "good" debt-to-income ratio? <span>+</span></div>
+                    <div class="faq-answer">Generally, a DTI of 36% or less is considered excellent. Most lenders require a DTI of 43% or lower to qualify for a conventional mortgage, although some programs allow up to 50% with a high credit score.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How do I calculate my DTI? <span>+</span></div>
+                    <div class="faq-answer">Add up all your monthly debt payments (rent/mortgage, car loans, student loans, credit card minimums) and divide that total by your gross monthly income (your pay before taxes). Multiply by 100 to get the percentage.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Does DTI affect my credit score? <span>+</span></div>
+                    <div class="faq-answer">No, your DTI ratio is not part of your credit score calculation. However, the amount of debt you owe (credit utilization) does affect your score, and lenders look at both your score and your DTI when making lending decisions.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How can I lower my DTI ratio? <span>+</span></div>
+                    <div class="faq-answer">You can lower your DTI by either increasing your gross monthly income or decreasing your monthly debt payments. Paying off a small loan entirely or reducing credit card balances are the fastest ways to improve your ratio.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Tools & Guides -->
+        <section class="related-tools">
+            <h3>Related Tools & Guides</h3>
+            <div class="related-grid">
+                <a href="mortgage.html" class="related-card">
+                    <h4>Mortgage Calculator</h4>
+                    <p>Calculate your potential monthly payment and see how it fits into your DTI ratio.</p>
+                    <span class="learn-more">Try Tool →</span>
+                </a>
+                <a href="credit-card.html" class="related-card">
+                    <h4>Credit Card Interest</h4>
+                    <p>Find out how much your high-interest debt is contributing to your monthly obligations.</p>
+                    <span class="learn-more">Try Tool →</span>
+                </a>
+                <a href="../guides/how-to-reduce-dti-ratio.html" class="related-card">
+                    <h4>Reduce Your DTI Guide</h4>
+                    <p>Proven strategies to lower your debt-to-income ratio and improve your loan approval odds.</p>
+                    <span class="learn-more">Read Guide →</span>
+                </a>
             </div>
         </section>
     </main>
