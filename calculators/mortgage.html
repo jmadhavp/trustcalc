@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Calculator USA & UK | Monthly Payment & Amortization</title>
+    <meta name="description" content="Calculate your monthly mortgage payments for US and UK properties. Includes property tax, insurance, and full amortization schedule.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/calculator.css">
+</head>
+<body>
+    <header>
+        <div class="container nav-wrapper">
+            <a href="../index.html" class="logo">Trust<span>Calc</span></a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html" data-i18n="home">Home</a></li>
+                    <li><a href="../index.html#calculators" data-i18n="calculators">Calculators</a></li>
+                </ul>
+            </nav>
+            <a href="../index.html#calculators" class="btn btn-primary" data-i18n="allTools">All Tools</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section style="margin-top: 3rem;">
+            <h1>Mortgage Calculator</h1>
+            <p style="color: var(--text-light);">Estimate your monthly payments and see a full breakdown of your mortgage costs.</p>
+        </section>
+
+        <div class="calc-container">
+            <!-- Inputs -->
+            <div class="calc-inputs">
+                <div class="region-toggle">
+                    <div class="region-btn active" data-region="US">USA Standards</div>
+                    <div class="region-btn" data-region="UK">UK Standards</div>
+                </div>
+
+                <div class="input-group">
+                    <label for="homeValue">Home Value</label>
+                    <input type="number" id="homeValue" value="400000" step="1000">
+                </div>
+
+                <div class="input-group">
+                    <label for="downPayment">Down Payment</label>
+                    <input type="number" id="downPayment" value="80000" step="1000">
+                </div>
+
+                <div class="input-group">
+                    <label for="interestRate">Interest Rate (APR %)</label>
+                    <input type="number" id="interestRate" value="6.5" step="0.1">
+                </div>
+
+                <div class="input-group">
+                    <label for="loanTerm">Loan Term (Years)</label>
+                    <select id="loanTerm">
+                        <option value="30">30 Years</option>
+                        <option value="20">20 Years</option>
+                        <option value="15">15 Years</option>
+                        <option value="10">10 Years</option>
+                    </select>
+                </div>
+
+                <!-- US Specific Inputs -->
+                <div id="us-inputs">
+                    <div class="input-group">
+                        <label for="propertyTax">Property Tax (Annual %)</label>
+                        <input type="number" id="propertyTax" value="1.2" step="0.1">
+                    </div>
+                    <div class="input-group">
+                        <label for="insurance">Home Insurance (Annual $)</label>
+                        <input type="number" id="insurance" value="1200" step="100">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results -->
+            <div class="calc-results">
+                <div class="result-item">
+                    <div class="result-label">Monthly Payment</div>
+                    <div id="monthlyPayment" class="result-value highlight">$0.00</div>
+                </div>
+
+                <div class="result-item">
+                    <div class="result-label">Principal & Interest</div>
+                    <div id="principalInterest" class="result-value">$0.00</div>
+                </div>
+
+                <div id="taxInsuranceRow" class="result-item">
+                    <div class="result-label">Taxes & Insurance</div>
+                    <div id="taxesInsurance" class="result-value">$0.00</div>
+                </div>
+
+                <div class="result-item">
+                    <div class="result-label">Total Loan Amount</div>
+                    <div id="totalLoan" class="result-value">$0.00</div>
+                </div>
+
+                <div style="margin-top: auto; padding-top: 1.5rem; border-top: 1px solid var(--border-color); font-size: 0.8rem; color: var(--text-light); line-height: 1.4;">
+                    <strong>Notice:</strong> This calculation is for estimation purposes only. Actual rates and payments may vary based on lender terms, credit score, and market conditions. This is not a commitment to lend.
+                </div>
+            </div>
+        </div>
+
+        <!-- Educational Content -->
+        <section class="seo-section">
+            <h2>Understanding Your Mortgage Payment</h2>
+            <p>Your monthly mortgage payment is more than just repaying the money you borrowed. In the USA, it typically includes <strong>PITI</strong>: Principal, Interest, Taxes, and Insurance. In the UK, payments are often focused on Principal and Interest, but you should also factor in building insurance and potential service charges.</p>
+            
+            <div style="margin: 2rem 0; padding: 2rem; background: var(--bg-color); border-radius: 8px;">
+                <h3>Usage Example: Typical US Home Purchase</h3>
+                <p>If you purchase a home for <strong>$400,000</strong> with a <strong>20% down payment ($80,000)</strong>, your loan amount would be $320,000. At a <strong>6.5% interest rate</strong> for 30 years, your principal and interest payment would be approximately <strong>$2,022.62</strong> per month. When you add property taxes (~$400/mo) and insurance (~$100/mo), your total monthly commitment would be roughly <strong>$2,522.62</strong>.</p>
+            </div>
+            
+            <div class="faq-container">
+                <h3>Frequently Asked Questions</h3>
+                <div class="faq-item">
+                    <div class="faq-question">What is a good down payment? <span>+</span></div>
+                    <div class="faq-answer">While 20% is often recommended to avoid Private Mortgage Insurance (PMI) in the US, many buyers put down as little as 3-5% depending on the loan type.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How does interest rate affect my payment? <span>+</span></div>
+                    <div class="faq-answer">Even a 1% difference in interest rates can save or cost you tens of thousands of dollars over the life of a 30-year loan.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Amortization Table -->
+        <section>
+            <h3>Amortization Schedule</h3>
+            <div class="table-responsive">
+                <table id="amortizationTable">
+                    <thead>
+                        <tr>
+                            <th>Year</th>
+                            <th>Beginning Balance</th>
+                            <th>Principal Paid</th>
+                            <th>Interest Paid</th>
+                            <th>Ending Balance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Generated by JS -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 TrustCalc Financial. <a href="../legal/privacy-policy.html" style="color: #adbdcc;" data-i18n="privacy">Privacy Policy</a> | <a href="../legal/disclaimer.html" style="color: #adbdcc;" data-i18n="disclaimer">Disclaimer</a></p>
+                <p>For estimation purposes only. Not financial advice.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/common.js"></script>
+    <script src="../assets/js/mortgage.js"></script>
+</body>
+</html>

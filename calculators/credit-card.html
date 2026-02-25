@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Interest Calculator | Payoff Time & Interest Cost</title>
+    <meta name="description" content="Calculate how long it will take to pay off your credit card balance and how much interest you will pay. Compare minimum payments vs fixed payments.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/calculator.css">
+</head>
+<body>
+    <header>
+        <div class="container nav-wrapper">
+            <a href="../index.html" class="logo">Trust<span>Calc</span></a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#calculators">Calculators</a></li>
+                </ul>
+            </nav>
+            <a href="../index.html#calculators" class="btn btn-primary">All Tools</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section style="margin-top: 3rem;">
+            <h1>Credit Card Interest Calculator</h1>
+            <p style="color: var(--text-light);">See how credit card interest compounds and find the fastest way to clear your balance.</p>
+        </section>
+
+        <div class="calc-container">
+            <!-- Inputs -->
+            <div class="calc-inputs">
+                <div class="input-group">
+                    <label for="cardBalance">Credit Card Balance</label>
+                    <input type="number" id="cardBalance" value="5000" step="100">
+                </div>
+
+                <div class="input-group">
+                    <label for="cardApr">Interest Rate (APR %)</label>
+                    <input type="number" id="cardApr" value="19.99" step="0.1">
+                </div>
+
+                <div class="input-group">
+                    <label for="paymentType">Payment Strategy</label>
+                    <select id="paymentType">
+                        <option value="minimum">Minimum Payment Only</option>
+                        <option value="fixed">Fixed Monthly Amount</option>
+                    </select>
+                </div>
+
+                <div id="minPayGroup" class="input-group">
+                    <label for="minPayPercent">Minimum Payment %</label>
+                    <input type="number" id="minPayPercent" value="2" step="0.5">
+                </div>
+
+                <div id="fixedPayGroup" class="input-group" style="display: none;">
+                    <label for="fixedPayment">Fixed Monthly Payment</label>
+                    <input type="number" id="fixedPayment" value="200" step="10">
+                </div>
+
+                <div class="input-group">
+                    <label for="currency">Currency</label>
+                    <select id="currency">
+                        <option value="US">USD ($)</option>
+                        <option value="UK">GBP (£)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Results -->
+            <div class="calc-results">
+                <div class="result-item">
+                    <div class="result-label">Time to Pay Off</div>
+                    <div id="payoffTime" class="result-value highlight">0 Months</div>
+                </div>
+
+                <div class="result-item">
+                    <div class="result-label">Total Interest Paid</div>
+                    <div id="totalInterest" class="result-value">$0.00</div>
+                </div>
+
+                <div class="result-item">
+                    <div class="result-label">Total Amount Paid</div>
+                    <div id="totalPaid" class="result-value">$0.00</div>
+                </div>
+
+                <div style="margin-top: auto; padding-top: 1.5rem; border-top: 1px solid var(--border-color); font-size: 0.8rem; color: var(--text-light); line-height: 1.4;">
+                    <strong>Notice:</strong> This calculation is for estimation purposes only. Credit card interest is calculated daily by most lenders. This tool uses monthly compounding as an estimate. This is not financial advice.
+                </div>
+            </div>
+        </div>
+
+        <section class="seo-section">
+            <h2>The Cost of Credit Card Debt</h2>
+            <p>Credit cards are one of the most expensive ways to borrow money due to high interest rates and monthly compounding. If you only make the <strong>minimum payment</strong>, most of your money goes toward interest rather than reducing your principal balance. This can lead to debt that lasts for decades.</p>
+            
+            <div style="margin: 2rem 0; padding: 2rem; background: var(--bg-color); border-radius: 8px;">
+                <h3>Usage Example: Paying Off a $5,000 Balance</h3>
+                <p>If you have a <strong>$5,000 balance</strong> on a card with a <strong>19.99% APR</strong> and only pay the <strong>2% minimum payment</strong>, it will take you over <strong>22 years</strong> to pay off the debt, and you will pay over <strong>$7,000 in interest alone</strong>. By switching to a fixed payment of <strong>$200 per month</strong>, you could be debt-free in less than <strong>3 years</strong> and pay only about $1,500 in interest.</p>
+            </div>
+            
+            <div class="faq-container">
+                <h3>Credit Card FAQ</h3>
+                <div class="faq-item">
+                    <div class="faq-question">How is credit card interest calculated? <span>+</span></div>
+                    <div class="faq-answer">Most cards use the "Average Daily Balance" method. The APR is divided by 365 to get a daily rate, which is then applied to your balance every day and added to your total at the end of the billing cycle.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What is a minimum payment? <span>+</span></div>
+                    <div class="faq-answer">It is the lowest amount you must pay each month to keep the account in good standing. It is usually a percentage (2-4%) of your balance or a flat fee (e.g., $25), whichever is higher.</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 TrustCalc Financial. <a href="../legal/privacy-policy.html" style="color: #adbdcc;">Privacy Policy</a> | <a href="../legal/disclaimer.html" style="color: #adbdcc;">Disclaimer</a></p>
+                <p>For estimation purposes only. Not financial advice.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/common.js"></script>
+    <script src="../assets/js/credit-card.js"></script>
+</body>
+</html>
